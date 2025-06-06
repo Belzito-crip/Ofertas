@@ -1,105 +1,79 @@
-body{
-    background-color: #E8E6D7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bahnschrift;
 }
 
-header{
+.texto {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: xx-large;
+}
+
+.cabecalho {
     display: flex;
-    width: 100%;
-    height: 350px;
-    background: linear-gradient(to right, #db370e, #db9209);
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    border-radius: 16px;
+    padding: 1rem 2rem;
+    border-bottom: 1.5px solid rgba(100, 100, 111, 0.4);
 }
 
-.banco{
-    height: 300px;
-    width: 199.875px;
-    border-radius: 16px;
-    margin-right: 1.5rem;
+.cabecalho .logo {
+    font-family: greconian;
 }
 
-.textos {
-    color: #ffffff;
-    margin-left: 1.5rem;
-}
-
-.textos p {
-    font-size: small;
-}
-
-.compre-now {
-    border: none;
-    border-radius: 50px;
-    height: 50px;
-    color: #F5ED00;
-    background-color: #000000;
-    padding: 1rem;
-    text-align: center;
-    box-shadow: 0px 0px 10px #F5ED00;
-}
-
-.compre-now:hover {
+.cabecalho a {
+    text-decoration: none;
     color: #000000;
-    background-color: #ffffff;
-    cursor: pointer;
-    transform: scale(1.09);
-    box-shadow: 0px 0px 20px #000000;
+    padding: 10px;
+    font-family: bahnschrift;
+    font-size: large;
 }
 
-.compre-now:active {
-    transform: scale(0.95);
-}
-
-.container-pai {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 15%;
-    height: 800px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-    border-radius: 16px;
-}
-
-.titulo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cabecalho input {
+    width: 500px;
+    height: 50px;
     text-align: center;
-    padding: 1rem;
-    color: #db370e;
+    font-size: medium;
+    font-family: bahnschrift;
+    border-radius: 12px;
+    border: 2px solid rgba(100, 100, 111, 0.4);
 }
 
-.textinho{
-    text-align: center;
+.cabecalho input:hover {
+    border: 2px solid rgb(29, 29, 185);
 }
 
-.produtos-totais {
+.lojas {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem;
-}
-
-.produto{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: column;
-    margin: 1rem;
-    background-color: rgba(255, 236, 129, 0.8);
-    border: 5px solid rgb(247, 224, 95);
-    height: 300px;
-    width: 25%;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
 }
 
-.produto img {
-    max-width: 100%;
+.lojas .produto {
+    border: 1px solid rgba(100, 100, 111, 0.4);
+    font-size: large;
+    background: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lojas .produto p {
+    padding: 1rem 0;
+    background: white;
+}
+
+.lojas .produto img {
     height: auto;
-    display: block;
-    margin: 0 auto;
+    width: 308px;
+    object-fit: cover;
+}
+
+.lojas .produto:hover {
+    transform: scale(1.3);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
 }
